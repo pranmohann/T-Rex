@@ -36,7 +36,7 @@ function preload(){
 }
 
 function setup() {
-  createCanvas(windowWidth, windowHeight);
+  createCanvas(windowWidth/2, windowHeight/2);
 
   var message = "This is a message";
   console.log(message)
@@ -89,7 +89,7 @@ function draw() {
     gameOver.visible = false;
     restart.visible = false;
     
-    ground.velocityX = -(4 + 3* score/100)
+    ground.velocityX = -(8 + 3* score/100)
     //scoring
     score = score + Math.round(getFrameRate()/60);
     
